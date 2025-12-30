@@ -1,0 +1,22 @@
+{
+    "version": "0.1.11",
+    "description": "Pair Android devices for wireless ADB debugging by scanning a QR code",
+    "homepage": "https://github.com/richard-fairthorne/pairqr",
+    "license": "GPL-3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/richard-fairthorne/pairqr/releases/download/v0.1.11/pairqr-windows-x64.zip",
+            "hash": "4baccb6bee824c158bd945c08dcf044a5001feac969b69f007ec7568d9b1e57d"
+        }
+    },
+    "bin": "pairqr.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/richard-fairthorne/pairqr/releases/download/v$version/pairqr-windows-x64.zip"
+            }
+        }
+    },
+    "notes": "Requires ADB (Android Debug Bridge) to be installed and in your PATH."
+}
